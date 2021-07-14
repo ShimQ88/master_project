@@ -1,0 +1,75 @@
+Hello This is demo instruction of Fourier_Descriptors and Yolo creator.
+
+/******************************************************/
+Mode 0 is the first process from dataset
+
+Command mode 0: ./main -mode 0 --cls <class_number> --data <path_dataset> --idx <path_index_file>
+Demo command mode 0: ./main -mode 0 --cls 0 --data test_dataset_rodents --idx index.txt
+
+Information of output from the first cycling
+output saved in directory: output_the_first_contour_yolo/test_dataset_rodents
+
+Directory of contour drawn image in ROI: output_the_first_contour_yolo/test_dataset_rodents/contour/0/
+Directory of resized image(640*640) from original image: output_the_first_contour_yolo/test_dataset_rodents/image/0/
+Directory of ROI image from original image: output_the_first_contour_yolo/test_dataset_rodents/roi/0/
+Directory of class, filename, yolo, and contour informations: output_the_first_contour_yolo/test_dataset_rodents/contour/0/contour_0.txt
+index.txt: the file store the index information that has been processed so far 
+Format of contour_<folder_number>.txt: <class_number>;<file_name>;<yolo_x> <yolo_y> <yolo_width> <yolo_height>;<CE1>,..,<CE21>
+/******************************************************/
+
+/******************************************************/
+Command mode 1 must need the output directory of mode 0
+Command mode 1: ./main -mode 1 --data <path_output_from_mode_0> --idx <path_index_file>
+Demo command mode 1: ./main -mode 1 --data output_the_first_contour_yolo/test_dataset_rodents  --idx index.txt
+
+Insturction (Screenshot include:the_second_filtering_screen_shot.png)
+After writing command on mode 1 in command line, click on the window which is the collection of image, and then press any key.
+From command line, you can see the "Choose what you want:".
+there are the index values which are located in left corner from each image, choose the indexes want to save.
+format is <index> <comma> with ascending order e.g) Choose what you want:2,3,5,20,40
+if user does not want to save any image, write input "s"(skip) onto command line e.g) Choose what you want:s
+and selected images save for next process.
+
+output data in directory of "output_the_second_contour_yolo/test_dataset_rodents"
+/******************************************************/
+
+/******************************************************/
+Command mode 2 must need the output directory of mode 1
+Command mode 2: ./main -mode 2 --data <path_output_from_mode_1> --idx <path_index_file>
+Demo command mode 2: ./main -mode 2 --data output_the_second_contour_yolo/test_dataset_rodents  --idx index.txt
+
+Insturction (Screenshot include:the_second_filtering_screen_shot.png)
+After writing command on mode 2 in command line, click on the window which is the collection of image, and then press any key.
+From command line, you can see the "Choose what you want:".(exactly same as mode 1)
+there are the index values which are located in left corner from each image, choose the indexes DO NOT want to save (because most of images are satisfied).
+format is <index> <comma> with ascending order e.g) Choose what you want:2,3,5,20,40 (exactly same as mode 1, BUT THESE INDEX IMAGES DO NOT BE SAVED).
+if user WANT TO SAVE ALL image, write input "s"(skip) onto command line e.g) Choose what you want:s
+unselected images save as final images.
+
+output data in directory of "output_the_final_contour_yolo/test_dataset_rodents"
+/******************************************************/
+
+/******************************************************/
+Command mode 3: ./main -mode 3 --data <path of contour file> --cls_root <directories of dataset> --save <directory to save weight> --load <directory to load weight>--per <percent_of_division_of_test_and_train> --tech <0:CNN, 1:ADA_Boost, 2:Random_Forest>
+./main -mode 3 --data contour.txt --cls_root /home/kyu/Desktop/birds,/home/kyu/Desktop/rodents_data --per 0.8 --tech 2
+./main -mode 3 --data contour_first_second_third_new.txt --cls 2 --cls_root /home/kyu/Desktop/birds,/home/kyu/Desktop/rodents_data --per 0.8 --tech 2
+
+./main -mode 3 --data contour_first.txt --cls 2 --cls_root /home/kyu/Desktop/birds,/home/kyu/Desktop/rodents_data --per 0.8 --tech 2
+
+./main -mode 3 --data contour_first.txt --cls 2 --cls_root /home/kyu/Desktop/birds,/home/kyu/Desktop/rodents_data --per 0.8 --tech 2
+
+
+/******************************************************/
+ ./main -mode 4 --cls 0 --data ~/Desktop/fd_yolo/test_dataset_rodents  --contour output_the_final_contour_yolo/test_dataset_rodents/contour.txt --path_yolov5 ~/Desktop/yolo/
+
+./main -mode 5 --cls 1 --data /home/kyu/Desktop/third_cycle_dataset/birds/true/bt_img --yolo_txt /home/kyu/Desktop/third_cycle_dataset/birds/true/txt --contour output_the_final_contour_yolo/test_dataset_rodents/contour.txt --path_yolov5 ~/Desktop/yolo/ --idx the_second_cycle/bt_img/index.txt
+
+./main -mode 5 --cls 1 --data /home/kyu/Desktop/third_cycle_dataset/birds/false/bf_img --yolo_txt /home/kyu/Desktop/third_cycle_dataset/birds/false/txt --contour output_the_final_contour_yolo/test_dataset_rodents/contour.txt --path_yolov5 ~/Desktop/yolo/ --idx the_second_cycle/bf_img/index.txt
+
+./main -mode 5 --cls 0 --data /home/kyu/Desktop/third_cycle_dataset/rodents/true/rt_img --yolo_txt /home/kyu/Desktop/third_cycle_dataset/rodents/true/txt --contour output_the_final_contour_yolo/test_dataset_rodents/contour.txt --path_yolov5 ~/Desktop/yolo/ --idx the_second_cycle/rt_img/index.txt
+
+./main -mode 6 --weight the_first_cycle.xml --tag tag.txt --tech 2
+./main -mode 6 --weight weight/rf.xml --tag tag.txt --tech 2
+./main -mode 6 --source /home/kyu/Desktop/squirrel.mp4--weight the_first_cycle.xml --tag tag.txt --tech 2
+
+

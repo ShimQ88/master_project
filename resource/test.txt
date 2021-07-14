@@ -1,0 +1,39 @@
+$Test <<EOD
+cat1 NN 63 2 NN 68 2 NN 87 7
+cat2 AB 71 2 AB 75 1 AB 88 6
+cat3 RF 73 2 RF 77 1 RF 88 5
+EOD
+
+$Train <<EOD
+cat1 NN 99 1 NN 99 0 NN 94 4
+cat2 AB 100 0 AB 100 0 AB 100 0
+cat3 RF 100 0 RF 100 0 RF 100 0
+EOD
+
+
+set terminal pngcairo enhanced rounded font ",16"
+set output 'fig.png'
+
+set style fill solid 1 border lt -1
+set boxwidth 1.0
+
+set linetype 42 lw 2 lc rgb 'black'
+set yr [0:150]
+
+set xtics out nomirror
+
+plot \
+  $Test using (0 + $0):3:xtic(2) w boxes lc rgb 'red' t 'The Test First Dataset', \
+  $Test using (0 + $0):3:4 w yerrorbars lt 42 t '', \
+  $Test using (4 + $0):6:xtic(5) w boxes lc rgb 'green' t 'The Test Second Dataset', \
+  $Test using (4 + $0):6:7 w yerrorbars lt 42 t '', \
+  $Test using (8 + $0):9:xtic(8) w boxes lc rgb 'blue' t 'The Test Third Dataset', \
+  $Test using (8 + $0):9:10 w yerrorbars lt 42 t ''
+
+plot \
+  $Train using (0 + $0):3:xtic(2) w boxes lc rgb 'yellow' t 'The Train First Dataset', \
+  $Train using (0 + $0):3:4 w yerrorbars lt 42 t '', \
+  $Train using (4 + $0):6:xtic(5) w boxes lc rgb 'orange' t 'The Train Second Dataset', \
+  $Train using (4 + $0):6:7 w yerrorbars lt 42 t '', \
+  $Train using (8 + $0):9:xtic(8) w boxes lc rgb 'purple' t 'The Train Third Dataset', \
+  $Train using (8 + $0):9:10 w yerrorbars lt 42 t ''

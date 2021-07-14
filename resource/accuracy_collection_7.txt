@@ -1,0 +1,40 @@
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 70.849678, 100.000000 
+MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 72.854027, 99.967316
+MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 76.788315, 99.992691
+Index, Method_Type, a_function, MethodParameter, MaxIteration, ClassCount, Test_Accuracy, Train_Accuracy 
+0, 1, 0.000010, 50000, 68.496346, 98.627739 
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 75.328468, 100.000000 
+Index, Method_Type, a_function, MethodParameter, MaxIteration, ClassCount, Test_Accuracy, Train_Accuracy 
+0, 1, 0.000010, 50000, 86.916664, 93.861107 
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 88.416672, 100.000000 
+MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 87.833336, 99.666664
+Index, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+Äì˜Index, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+ÄÌÜDËUIndex, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+p¡¥[¿UMaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 72.854027, 99.967316
+Index, Method_Type, a_function, MethodParameter, MaxIteration, ClassCount, Test_Accuracy, Train_Accuracy 
+0, 1, 0.000010, 50000, 63.180828, 99.052284 
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 70.849678, 100.000000 
+Index, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+Ä£l‹ˆUMaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 75.662956, 99.981415
+Index, Method_Type, a_function, MethodParameter, MaxIteration, ClassCount, Test_Accuracy, Train_Accuracy 
+0, 1, 0.000010, 50000, 68.946716, 95.923164 
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 72.019829, 100.000000 
+Index, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+PÿÂíUIndex, MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Accuracy
+@ê?VIndex, Method_Type, a_function, MethodParameter, MaxIteration, ClassCount, Test_Accuracy, Train_Accuracy 
+0, 1, 0.000010, 50000, 68.352142, 97.229118 
+BoostType, WeakCount, WeightTrimRate, ClassCount, Test_Accuracy, Train_Accuracy
+0, 25, 80.830002, 20, 73.972908, 100.000000 
+MaxDepth, RegressionAccuracy, MaxCategories, TermCritera, ClassCount, Test_Accuracy, Train_Accuracy
+20, 7, 0.010000, 500, 2, 76.433411, 99.926643

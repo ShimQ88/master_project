@@ -1,0 +1,15 @@
+technique, mean_square_error_test, mean_square_error_train
+The_first_dataset ANN 63 ± 2% 99 ± 1%
+The_first_dataset Ada_boost 71 ± 2% 100 ± 0%
+The_first_dataset Random_Forest 73 ± 2% 100 ± 0%
+The_second_dataset ANN 68 ± 2% 99 ± 0% 
+The_second_dataset Ada_boost 75 ± 1% 100 ± 0% 
+The_second_dataset Random_Forest 77 ± 1% 100 ± 0%
+The_third_dataset ANN 87 ± 7% 94 ± 4% 
+The_third_dataset Ada_boost 88 ± 6% 100 ± 0%
+The_third_dataset Random_Forest 88 ± 5% 100 ± 0%
+
+SVM
+70 ± 3%, 71 ± 1%
+70 ± 1%, 71 ± 0%
+81 ± 16%, 86 ± 2%

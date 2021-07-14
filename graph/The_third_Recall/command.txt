@@ -1,0 +1,15 @@
+#THis is sample gnuplot
+
+set title "Precision * Recall Curve about Rodent"
+set xlabel "Recall"
+set ylabel "Precision"
+set xrange [0:1]
+set yrange [0:1]
+
+set output "second_recall.out" 
+plot "<(sed -n '2,1134p' recall_rodent_NN.txt )" using 5:4 smooth unique with line title 'NN' linestyle 1,\
+"<(sed -n '2,1134p' recall_rodent_Boost.txt )" using 5:4 smooth unique with line title 'Boost' linestyle 7,\
+"<(sed -n '2,1134p' recall_rodent_RF.txt )" using 5:4 smooth unique with line title 'RF' linestyle 14,\
+"<(sed -n '2,1134p' recall_rodent_SVM.txt )" using 5:4 smooth unique with line title 'SVM' linestyle 10
+
+save "second_recall.ep" 

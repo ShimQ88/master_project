@@ -1,0 +1,144 @@
+//train with contour.txt test result from contour.txt
+k value 5
+ntrain_samples 459 training_correct_predict 347 
+
+Test Recognition rate: training set = 75.6% 
+
+ntrain_samples 459 training_correct_predict 337 
+
+Test Recognition rate: training set = 73.4% 
+
+ntrain_samples 459 training_correct_predict 323 
+
+Test Recognition rate: training set = 70.4% 
+
+ntrain_samples 459 training_correct_predict 321 
+
+Test Recognition rate: training set = 69.9% 
+
+ntrain_samples 459 training_correct_predict 344 
+
+Test Recognition rate: training set = 74.9% 
+
+ntrain_samples 1836 training_correct_predict 1835 
+
+Test Recognition rate: training set = 99.9% 
+
+ntrain_samples 1836 training_correct_predict 1836 
+
+Test Recognition rate: training set = 100.0% 
+
+ntrain_samples 1836 training_correct_predict 1835 
+
+Test Recognition rate: training set = 99.9% 
+
+ntrain_samples 1836 training_correct_predict 1835 
+
+Test Recognition rate: training set = 99.9% 
+
+ntrain_samples 1836 training_correct_predict 1836 
+
+Test Recognition rate: training set = 100.0%
+
+
+
+//train with contour.txt test result from contour_test.txt
+k value 5
+ntrain_samples 459 training_correct_predict 341 
+
+Test Recognition rate: training set = 74.3% 
+
+ntrain_samples 459 training_correct_predict 338 
+
+Test Recognition rate: training set = 73.6% 
+
+ntrain_samples 459 training_correct_predict 332 
+
+Test Recognition rate: training set = 72.3% 
+
+ntrain_samples 459 training_correct_predict 311 
+
+Test Recognition rate: training set = 67.8% 
+
+ntrain_samples 459 training_correct_predict 345 
+
+Test Recognition rate: training set = 75.2% 
+
+ntrain_samples 1836 training_correct_predict 1827 
+
+Test Recognition rate: training set = 99.5% 
+
+ntrain_samples 1836 training_correct_predict 1822 
+
+Test Recognition rate: training set = 99.2% 
+
+ntrain_samples 1836 training_correct_predict 1826 
+
+Test Recognition rate: training set = 99.5% 
+
+ntrain_samples 1836 training_correct_predict 1822 
+
+Test Recognition rate: training set = 99.2% 
+
+ntrain_samples 1836 training_correct_predict 1825 
+
+Test Recognition rate: training set = 99.4% 
+
+
+
+//the first and second cycle merged
+
+ntrain_samples 807 training_correct_predict 608 
+
+Test Recognition rate: training set = 75.3% 
+
+problem_val: 0
+ntrain_samples 807 training_correct_predict 621 
+
+Test Recognition rate: training set = 77.0% 
+
+problem_val: 0
+ntrain_samples 807 training_correct_predict 600 
+
+Test Recognition rate: training set = 74.3% 
+
+problem_val: 0
+ntrain_samples 807 training_correct_predict 609 
+
+Test Recognition rate: training set = 75.5% 
+
+problem_val: 0
+ntrain_samples 807 training_correct_predict 615 
+
+Test Recognition rate: training set = 76.2% 
+
+problem_val: 0
+ntrain_samples 3228 training_correct_predict 3227 
+
+Test Recognition rate: training set = 100.0% 
+
+problem_val: 0
+ntrain_samples 3228 training_correct_predict 3227 
+
+Test Recognition rate: training set = 100.0% 
+
+problem_val: 0
+ntrain_samples 3228 training_correct_predict 3228 
+
+Test Recognition rate: training set = 100.0% 
+
+problem_val: 0
+ntrain_samples 3228 training_correct_predict 3228 
+
+Test Recognition rate: training set = 100.0% 
+
+problem_val: 0
+ntrain_samples 3228 training_correct_predict 3227 
+
+Test Recognition rate: training set = 100.0% 
+
+problem_val: 0
+
+
+
+
